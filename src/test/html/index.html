@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Test @superflycss/color-utilities</title>
+  <link href="../css/index.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header class="Header--column">
+    <h1 class="Display--fs400fw700">Component Navbox</h1>
+    <a class="Header_link" href="https://github.com/superflycss/component-navbox/">Github</a>
+  </header>
+
+  <!-- START TEST 1-->
+
+  <div class="TestHeader ">
+    <span class="TestCounter"></span>
+    <span class="TestComponent">Navbox</span>
+  </div>
+
+  <div class="TestContainer">
+    <div class="TestInput 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+        <code class="u-text-color-md-pink-400">Navbox</code> is the container.
+      </div>
+
+
+      <pre class="TestMarkup ">
+
+        <code class="html ">
+<div class="Navbox">
+    <a href="#">First item</a>
+    <a href="#">Second item</a>
+    <a href="#">Third item</a>
+</div>
+        </code>
+
+
+    </pre>
+    </div>
+    <!--END TEST INPUT-->
+    <div class="TestOutput 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestThen "></div>
+      <div class="TestDescription">Items are rendered in a column always.</div>
+    </div>
+  </div>
+  <!--END TEST OUTPUT-->
+
+
+
+  <!--START TEST 2-->
+
+
+
+  <div class="TestHeader ">
+    <span class="TestCounter "></span>
+    <span class="TestComponent">Navbox--sm</span>
+  </div>
+
+  <div class="TestContainer">
+    <div class="TestInput 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+        <code class="u-text-color-md-pink-400">Navbox--sm</code> is the container.
+      </div>
+
+
+      <pre class="TestMarkup ">
+
+        <code class="html">
+<div class="Navbox--sm">
+    <a href="#"> First item </a>
+    <a href="#"
+       class="u-sm-padding-left-1rem"> Second item </a>
+    <a href="#"
+       class="u-sm-padding-left-1rem"> Third item </a>
+</div>
+        </code>
+
+
+    </pre>
+    </div>
+    <!--END TEST INPUT-->
+    <div class="TestOutput 
+                u-box-shadow-0-2-12-0-dfe3eb ">
+      <div class="TestThen"></div>
+      <div class="TestDescription">
+          The items are rendered in a row when the viewport 
+          is greater the <code class="u-text-color-md-pink-400">--sm-viewport</code> variable breakpoint. 
+          Resize the viewport to trigger the media query breakpoint.  
+        </div>
+    </div>
+  </div>
+  <!--END TEST OUTPUT-->
+
+
+
+  <!--START TEST 3 -->
+
+
+
+  <div class="TestHeader ">
+        <span class="TestCounter"></span>
+        <span class="TestComponent">Navbox--md</span>
+      </div>
+    
+      <div class="TestContainer">
+        <div class="TestInput 
+                    u-box-shadow-0-2-12-0-dfe3eb ">
+          <div class="TestWhen "></div>
+          <div class="TestDescription ">
+            <code class="u-text-color-md-pink-400">Navbox--md</code> is the container.
+          </div>
+        
+          <pre class="TestMarkup ">
+    
+            <code class="html">
+    <div class="Navbox--md">
+        <a href="#"> First item </a>
+        <a href="#"
+           class="u-md-padding-left-1rem"> Second item </a>
+        <a href="#"
+           class="u-md-padding-left-1rem"> Third item </a>
+    </div>
+            </code>
+    
+        </pre>
+        </div>
+        <!--END TEST INPUT-->
+        <div class="TestOutput 
+                    u-box-shadow-0-2-12-0-dfe3eb ">
+          <div class="TestThen"></div>
+          <div class="TestDescription">
+              The items are rendered in a row when the viewport 
+              is greater the <code class="u-text-color-md-pink-400">--md-viewport</code> variable breakpoint. 
+              Resize the viewport to trigger the media query breakpoint.  
+          </div>
+        </div>
+      </div>
+      <!--END TEST OUTPUT-->
+
+      <!--START TEST 4 -->
+
+  <div class="TestHeader ">
+        <span class="TestCounter"></span>
+        <span class="TestComponent">Navbox--lg</span>
+      </div>
+    
+      <div class="TestContainer">
+        <div class="TestInput 
+                    u-box-shadow-0-2-12-0-dfe3eb ">
+          <div class="TestWhen "></div>
+          <div class="TestDescription ">
+            <code class="u-text-color-md-pink-400">Navbox--lg</code> is the container.
+          </div>
+        
+          <pre class="TestMarkup ">
+    
+            <code class="html">
+    <div class="Navbox--lg">
+        <a href="#"> First item </a>
+        <a href="#"
+           class="u-lg-padding-left-1rem"> Second item </a>
+        <a href="#"
+           class="u-lg-padding-left-1rem"> Third item </a>
+    </div>
+            </code>
+    
+    
+        </pre>
+        </div>
+        <!--END TEST INPUT-->
+        <div class="TestOutput 
+                    u-box-shadow-0-2-12-0-dfe3eb ">
+          <div class="TestThen "></div>
+          <div class="TestDescription">
+              The items are rendered in a row when the viewport 
+              is greater the <code class="u-text-color-md-pink-400">--lg-viewport</code> variable breakpoint.  
+              Resize the viewport to trigger the media query breakpoint.  
+          </div>
+        </div>
+      </div>
+      <!--END TEST OUTPUT-->
+
+
+</body>
+
+</html>

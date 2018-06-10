@@ -1,3 +1,8 @@
+dist 
+serve
+deploy
+target
+
 # Logs
 logs
 *.log

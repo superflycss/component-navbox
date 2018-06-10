@@ -1,0 +1,42 @@
+{
+  "name": "component-navbox",
+  "version": "1.0.0",
+  "description": "Navbox component",
+  "main": "index.css",
+  "scripts": {
+    "update": "ncu -a && npm i"
+  },
+  "keywords": [
+    "css",
+    "component",
+    "flexbox",
+    "navigation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superflycss/component-navbox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/superflycss/component-navbox/issues"
+  },
+  "homepage": "https://github.com/superflycss/button-navbox#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@superflycss/component-body": "^1.0.1",
+    "@superflycss/component-display": "^1.0.2",
+    "@superflycss/component-header": "^2.1.0",
+    "@superflycss/component-test": "^3.3.1",
+    "@superflycss/foundation": "^2.0.3",
+    "@superflycss/utilities-colors": "^3.0.6",
+    "@superflycss/utilities-effects": "^2.1.0",
+    "@superflycss/utilities-fonts": "^3.3.7",
+    "@superflycss/utilities-format": "^1.1.1",
+    "@superflycss/utilities-layout": "^4.0.2",
+    "lite-server": "^2.3.0",
+    "npm-check-updates": "^2.14.2"
+  },
+  "dependencies": {
+    "@superflycss/variables-dimension": "^2.0.0",
+    "@superflycss/variables-layout": "^2.0.0"
+  }
+}

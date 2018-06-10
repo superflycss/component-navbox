@@ -1,0 +1,70 @@
+/** @define component  */
+
+/*! | superflycss/component-navbox |
+     | MIT License                |
+     | https://github.com/superflycss/component-navbox/blob/master/LICENSE.md */ 
+
+@import "@superflycss/variables-layout";
+@import "@superflycss/variables-dimension";
+
+:root {
+    --Navbox-background-color: transparent;
+    --Navbox-padding-top: 0rem;
+    --Navbox-padding-bottom: 0rem;
+    --Navbox-padding-left: 0rem;
+    --Navbox-padding-right: 0rem;
+    --Navbox-margin-top: 0rem;
+    --Navbox-margin-bottom: 0rem;
+    --Navbox-margin-left: 0rem;
+    --Navbox-margin-right: 0rem;
+--Navbox {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--Navbox-padding-top);
+    padding-bottom: var(--Navbox-padding-bottom);
+    padding-left: var(--Navbox-padding-left);
+    padding-right: var(--Navbox-padding-right);    
+    margin-top: var(--Navbox-margin-top);
+    margin-bottom: var(--Navbox-margin-bottom);
+    margin-left: var(--Navbox-margin-left); 
+    margin-right: var(--Navbox-margin-right);
+    background-color: var(--Navbox-background-color);
+    }
+}
+
+.Navbox {
+    @apply(--Navbox);
+    @apply(--u-flex-column);    
+}
+
+.Navbox--sm {
+    @apply(--Navbox);
+}    
+
+
+@media (--sm-viewport) {
+    .Navbox--sm {
+        @apply(--u-flex-row);    
+    }    
+}
+
+.Navbox--md {
+    @apply(--Navbox);
+}    
+
+
+@media (--md-viewport) {
+    .Navbox--md {
+        @apply(--u-flex-row);    
+    }    
+}
+
+.Navbox--lg {
+    @apply(--Navbox);
+}
+
+@media (--lg-viewport) {
+    .Navbox--lg {
+        @apply(--u-flex-row);    
+    }
+}
