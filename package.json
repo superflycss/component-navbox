@@ -1,5 +1,5 @@
 {
-  "name": "component-navbox",
+  "name": "@superflycss/component-navbox",
   "version": "1.0.0",
   "description": "Navbox component",
   "main": "index.css",
