@@ -34,7 +34,6 @@
 
 .Navbox {
     @apply(--Navbox);
-    @apply(--u-flex-column);    
 }
 
 .Navbox--sm {
