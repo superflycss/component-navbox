@@ -246,6 +246,59 @@
   </div>
   <!--END TEST OUTPUT-->
 
+  <!--START TEST -->
+
+  <div class="TestHeader ">
+    <span class="TestCounter"></span>
+    <span class="TestComponent">Navbox Composite</span>
+  </div>
+
+  <div class="TestContainer">
+    <div class="TestInput">
+      <div class="TestWhen "></div>
+      <div class="TestDescription ">
+        <code class="u-text-color-md-pink-400">Navbox</code>s are used to create a responsive composite.
+      </div>
+      <pre class="TestMarkup ">
+            <code class="html">
+<nav class="Navbox--lg">
+  <nav class="Navbox--center-md u-background-color-md-blue-50">
+      <img width="40px" src="../svg/logo-gray-900.svg">
+    </img>   
+    <a href="#"
+        class="u-md-padding-left-1rem"> First item </a>
+    <a href="#"
+        class="u-md-padding-left-1rem"> Second item </a>
+    <a href="#"
+        class="u-md-padding-left-1rem"> Third item </a>
+    </nav>  
+    <nav class="Navbox--center-md u-background-color-md-deep-purple-50">
+        <img width="40px" src="../svg/logo-gray-900.svg">
+      </img>   
+      <a href="#"
+          class="u-md-padding-left-1rem"> First item </a>
+      <a href="#"
+          class="u-md-padding-left-1rem"> Second item </a>
+      <a href="#"
+          class="u-md-padding-left-1rem"> Third item </a>
+      </nav>    
+</nav>
+            </code>
+        </pre>
+    </div>
+    <!--END TEST INPUT-->
+    <div class="TestOutput">
+      <div class="TestThen "></div>
+      <div class="TestDescription">
+        The <code class="u-text-color-md-pink-400">Navbox</code>s are rendered in a row when the viewport is greater the
+        <code class="u-text-color-md-pink-400">--lg-viewport</code> variable breakpoint and in a column otherwise.
+        If the viewport size drops below the <code class="u-text-color-md-pink-400">--md-viewport</code> breakpoint,
+        all items are rendered in a column.  
+      </div>
+    </div>
+  </div>
+  <!--END TEST OUTPUT-->
+
 </body>
 
 </html>
