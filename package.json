@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/component-navbox",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Navbox component",
   "main": "index.css",
   "scripts": {
