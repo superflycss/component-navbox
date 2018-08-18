@@ -47,6 +47,30 @@
     .Navbox--$(breakpoint) {
       @apply (--Navbox);
       @apply (--u-flex-row);
+      @apply(--u-flex-align-items-center);
+    }
+  }
+}
+
+.Navbox--center {
+  @apply (--Navbox);
+  @apply(--u-flex-align-items-center);
+}
+
+@each $breakpoint in sm, md, lg {
+  .Navbox--center-$(breakpoint) {
+    @apply (--Navbox);
+    @apply(--u-flex-align-items-center);
+  }
+}
+
+@each $breakpoint in sm, md, lg {
+  @media (--$(breakpoint)-viewport) {
+    .Navbox--center-$(breakpoint) {
+      @apply (--Navbox);
+      @apply (--u-flex-row);
+      @apply(--u-flex-align-items-center);
+
     }
   }
 }

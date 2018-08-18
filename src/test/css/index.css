@@ -1,5 +1,6 @@
 @import "@superflycss/foundation";
 @import "../../main/css/";
+@import "@superflycss/superflycss";
 @import "@superflycss/component-test";
 @import "@superflycss/component-display";
 @import "@superflycss/component-header";
