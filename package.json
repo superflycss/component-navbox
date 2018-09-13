@@ -25,7 +25,7 @@
     "@superflycss/component-body": "^1.0.1",
     "@superflycss/component-display": "^1.0.2",
     "@superflycss/component-header": "^2.1.0",
-    "@superflycss/component-test": "^3.6.9",
+    "@superflycss/component-test": "^3.6.11",
     "@superflycss/foundation": "^2.0.3",
     "@superflycss/superflycss": "^1.0.0",
     "@superflycss/utilities-colors": "^3.0.6",
