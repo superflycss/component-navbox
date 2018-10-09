@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/component-navbox",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Navbox component",
   "main": "index.css",
   "scripts": {
@@ -19,13 +19,13 @@
   "bugs": {
     "url": "https://github.com/superflycss/component-navbox/issues"
   },
-  "homepage": "https://github.com/superflycss/button-navbox#readme",
+  "homepage": "https://github.com/superflycss/component-navbox#readme",
   "license": "MIT",
   "devDependencies": {
     "@superflycss/component-body": "^1.0.1",
     "@superflycss/component-display": "^1.0.2",
     "@superflycss/component-header": "^2.1.0",
-    "@superflycss/component-test": "^3.6.12",
+    "@superflycss/component-test": "^3.6.14",
     "@superflycss/foundation": "^2.0.3",
     "@superflycss/superflycss": "^1.0.0",
     "@superflycss/utilities-colors": "^3.0.6",
