@@ -28,13 +28,13 @@
     "@superflycss/component-test": "^3.6.14",
     "@superflycss/foundation": "^2.0.3",
     "@superflycss/superflycss": "^1.0.0",
-    "@superflycss/utilities-colors": "^3.0.6",
+    "@superflycss/utilities-colors": "^3.0.8",
     "@superflycss/utilities-effects": "^2.1.0",
     "@superflycss/utilities-fonts": "^3.3.7",
     "@superflycss/utilities-format": "^1.1.1",
-    "@superflycss/utilities-layout": "^4.0.3",
+    "@superflycss/utilities-layout": "^4.0.4",
     "lite-server": "^2.4.0",
-    "npm-check-updates": "^2.14.2"
+    "npm-check-updates": "^2.15.0"
   },
   "dependencies": {
     "@superflycss/variables-dimension": "^2.0.0",
