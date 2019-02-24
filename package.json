@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/component-navbox",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Navbox component",
   "main": "index.css",
   "scripts": {
@@ -25,14 +25,14 @@
     "@superflycss/component-body": "^1.0.1",
     "@superflycss/component-display": "^1.0.2",
     "@superflycss/component-header": "^2.1.0",
-    "@superflycss/component-test": "^3.6.14",
+    "@superflycss/component-test": "^3.6.24",
     "@superflycss/foundation": "^2.0.3",
-    "@superflycss/superflycss": "^1.0.0",
-    "@superflycss/utilities-colors": "^3.0.8",
+    "@superflycss/superflycss": "^1.0.1",
+    "@superflycss/utilities-colors": "^3.0.9",
     "@superflycss/utilities-effects": "^2.1.0",
     "@superflycss/utilities-fonts": "^3.3.7",
-    "@superflycss/utilities-format": "^1.1.1",
-    "@superflycss/utilities-layout": "^4.0.4",
+    "@superflycss/utilities-format": "^1.2.6",
+    "@superflycss/utilities-layout": "^4.0.16",
     "lite-server": "^2.4.0",
     "npm-check-updates": "^2.15.0"
   },
