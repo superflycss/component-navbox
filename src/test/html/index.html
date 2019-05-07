@@ -143,8 +143,9 @@ all items are rendered in a column.
 {% call Test.component( 'Multi Navbox Composite', when, then ) %}
 <nav class="Navbox--lg">
   <nav class="Navbox--center-md u-background-color-md-blue-50">
-      <img width="40px" src="../svg/logo-gray-900.svg">
-    </img>   
+    <div style="width:40px; height:40px">
+    {% include "@superflycss/superflycss/logo-optimized.svg" %}        
+    </div>   
     <a href="#"
         class="u-md-padding-left-1rem"> First item </a>
     <a href="#"
@@ -153,8 +154,9 @@ all items are rendered in a column.
         class="u-md-padding-left-1rem"> Third item </a>
     </nav>  
     <nav class="Navbox--center-md u-background-color-md-deep-purple-50">
-        <img width="40px" src="../svg/logo-gray-900.svg">
-      </img>   
+      <div style="width:40px; height:40px">
+      {% include "@superflycss/superflycss/logo-optimized.svg" %}        
+      </div>   
       <a href="#"
           class="u-md-padding-left-1rem"> First item </a>
       <a href="#"
