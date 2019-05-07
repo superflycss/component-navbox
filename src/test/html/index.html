@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% import "@superflycss/component-test/TestHead.njk" as TestHead %}
+{% import "@superflycss/component-test/TestHeader.njk" as TestHeader %}
+{% import "@superflycss/component-test/TestTemplate.njk" as Test %}
+
+{{ TestHead.component( 'navbox' ) }}
+
+<body>
+
+{{ TestHeader.component( 'navbox' ) }}
+
+<!-- START TEST -->
+{% set when %}
+<code class="u-text-color-md-pink-400">Navbox</code> is the container.
+{% endset %}
+{% call Test.component( 'Navbox', when, 'Items are rendered in a column always regardless of viewport size.' ) %}
+<nav class="Navbox">
+    <a href="#">First item</a>
+    <a href="#">Second item</a>
+    <a href="#">Third item</a>
+</nav>
+{% endcall %}
+
+<!-- START TEST -->
+
+{% for size in ['sm', 'md', 'lg'] %}
+{% set name %}
+Navbox--{{size}}
+{% endset %}
+{% set when %}
+<code class="u-text-color-md-pink-400">{{name}}</code> is the container.
+{% endset %}
+{% set then %}
+The items are rendered in a row when the viewport is greater the
+<code class="u-text-color-md-pink-400">--{{size}}-viewport</code> 
+variable breakpoint. Resize the viewport to trigger the media query breakpoint.
+{% endset %}
+{% call Test.component( name, when, then ) %}
+<nav class="{{name}}">
+    <a href="#"> First item </a>
+    <a href="#"
+       class="u-{{size}}-padding-left-1rem"> Second item </a>
+    <a href="#"
+       class="u-{{size}}-padding-left-1rem"> Third item </a>
+</nav>
+{% endcall %}
+{% endfor %}
+
+<!-- START TEST -->
+{% set when %}
+<code class="u-text-color-md-pink-400">Navbox--center</code> is the container.
+{% endset %}
+{% call Test.component( 'Navbox--center', when, 'Items are rendered in a centered column always regardless of viewport size.' ) %}
+<nav class="Navbox--center">
+    <a href="#">First item</a>
+    <a href="#">Second item</a>
+    <a href="#">Third item</a>
+</nav>
+{% endcall %}
+
+<!-- START TEST -->
+{% for size in ['sm', 'md', 'lg'] %}
+{% set name %}
+Navbox--center-{{size}}
+{% endset %}
+{% set when %}
+<code class="u-text-color-md-pink-400">{{name}}</code> is the container.
+{% endset %}
+{% set then %}
+The items are rendered in a row when the viewport is greater the
+<code class="u-text-color-md-pink-400">--{{size}}-viewport</code> 
+variable breakpoint. Resize the viewport to trigger the media query breakpoint.
+{% endset %}
+{% call Test.component( name, when, then ) %}
+<nav class="{{name}}">
+    <a href="#"> First item </a>
+    <a href="#"
+       class="u-{{size}}-padding-left-1rem"> Second item </a>
+    <a href="#"
+       class="u-{{size}}-padding-left-1rem"> Third item </a>
+</nav>
+{% endcall %}
+{% endfor %}
+
+<!-- START TEST -->
+{% set when %}
+<code class="u-text-color-md-pink-400">Navbox--md</code> is a container for other Navboxes.{% endset %}
+{% set then %}
+The items are rendered in a row when the viewport is greater the
+ <code class="u-text-color-md-pink-400">--lg-viewport</code> variable 
+ breakpoint. Resize the viewport to trigger the media query breakpoint.
+{% endset %}
+{% call Test.component( 'Navbox--md Composite', when, then ) %}
+<nav class="Navbox--md">
+  <img width="40px" src="../svg/logo-gray-900.svg">
+ </img>
+  <nav class="Navbox--md">
+    <a href="#"
+       class="u-lg-padding-left-1rem"> First item </a>
+    <a href="#"
+        class="u-lg-padding-left-1rem"> Second item </a>
+    <a href="#"
+        class="u-lg-padding-left-1rem"> Third item </a>
+    </nav>
+</nav>
+{% endcall %}
+
+
+<!-- START TEST -->
+{% set when %}
+<code class="u-text-color-md-pink-400">Navbox--center-md</code> is a container for other Navboxes.{% endset %}
+{% set then %}
+The items are rendered in a row when the viewport is greater the
+<code class="u-text-color-md-pink-400">--md-viewport</code> variable breakpoint. 
+Resize the viewport to trigger the media query breakpoint.
+{% endset %}
+{% call Test.component( 'Navbox--center-md Composite', when, then ) %}
+<nav class="Navbox--center-md">
+  <img width="40px" src="../svg/logo-gray-900.svg">
+ </img>
+  <nav class="Navbox--center-md">
+    <a href="#"
+       class="u-lg-padding-left-1rem"> First item </a>
+    <a href="#"
+        class="u-lg-padding-left-1rem"> Second item </a>
+    <a href="#"
+        class="u-lg-padding-left-1rem"> Third item </a>
+    </nav>  
+</nav>
+{% endcall %}
+<!-- START TEST -->
+{% set when %}
+<code class="u-text-color-md-pink-400">Navbox</code>s are used to create a responsive composite.
+{% endset %}
+{% set then %}
+The <code class="u-text-color-md-pink-400">Navbox</code>s are rendered in a row when the viewport is greater the
+<code class="u-text-color-md-pink-400">--lg-viewport</code> variable breakpoint and in a column otherwise.
+If the viewport size drops below the <code class="u-text-color-md-pink-400">--md-viewport</code> breakpoint,
+all items are rendered in a column.  
+{% endset %}
+{% call Test.component( 'Multi Navbox Composite', when, then ) %}
+<nav class="Navbox--lg">
+  <nav class="Navbox--center-md u-background-color-md-blue-50">
+    <div style="width:40px; height:40px">
+    {% include "@superflycss/superflycss/logo-optimized.svg" %}        
+    </div>   
+    <a href="#"
+        class="u-md-padding-left-1rem"> First item </a>
+    <a href="#"
+        class="u-md-padding-left-1rem"> Second item </a>
+    <a href="#"
+        class="u-md-padding-left-1rem"> Third item </a>
+    </nav>  
+    <nav class="Navbox--center-md u-background-color-md-deep-purple-50">
+      <div style="width:40px; height:40px">
+      {% include "@superflycss/superflycss/logo-optimized.svg" %}        
+      </div>   
+      <a href="#"
+          class="u-md-padding-left-1rem"> First item </a>
+      <a href="#"
+          class="u-md-padding-left-1rem"> Second item </a>
+      <a href="#"
+          class="u-md-padding-left-1rem"> Third item </a>
+      </nav>    
+</nav>
+{% endcall %}
+</body>
+</html>

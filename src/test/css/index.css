@@ -1,0 +1,116 @@
+@import "@superflycss/foundation";
+@import "../../main/css/";
+@import "@superflycss/superflycss";
+@import "@superflycss/component-test";
+@import "@superflycss/component-display";
+@import "@superflycss/component-header";
+@import "@superflycss/utilities-layout";
+@import "@superflycss/variables-layout";
+@import "@superflycss/utilities-effects";
+@import "@superflycss/utilities-format";
+@import "@superflycss/utilities-fonts";
+@import "@superflycss/utilities-colors/material/";
+@import "@superflycss/utilities-colors/browser/";
+
+body {
+  counter-reset: test-counter;
+}
+
+/** Define a color palette */
+:root {
+  --Palette-background-color--Header: #F2F2F2;
+  --Palette-border-color:  #1AC0BA;
+  --Palette-text-color: #1AC0BA;
+  --Palette_onHover-text-color: #e91eaa;
+  --Palette_onHover-border-color: #e91eaa;
+  --Palette-background-color--TestHeader: #CDDC38;
+}
+
+/** Test overrides */
+:root {
+  --TestHeader-background-color: var(--Palette-background-color--TestHeader);
+}
+
+/** Header component overrides */
+:root {
+  --Header-background-color: var(--Palette-background-color--Header);
+  --Header-padding-bottom: 3rem;
+
+  --Header_link-padding-left: 5rem;
+  --Header_link-padding-right: 5rem;
+  --Header_link-padding-top: 0.5rem;
+  --Header_link-padding-bottom: 0.5rem;
+  --Header_link-border-radius: 4px;
+  --Header_link-border-color: var(--Palette-border-color);
+  --Header_link-text-color: var(--Palette-text-color);
+
+  --Header_link_onHover-text-decoration: none;
+  --Header_link_onHover-text-color: var(--Palette_onHover-text-color);
+  --Header_link_onHover-border-color: var(--Palette_onHover-border-color);
+}
+
+.TestWhen::before {
+  content: "When ";
+  color: rgba(26, 192, 186, 0.64);
+}
+
+.TestThen::before {
+  content: "Then ";
+  color: rgba(26, 192, 186, 0.64);
+}
+
+.hljs-tag {
+  padding: 0px;
+  white-space: normal;
+  color: inherit;
+  font-size: 1.1rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+/*
+.hljs-title {
+  padding: 0px;
+  white-space: normal;
+  color: orange;
+  font-size: 1.3em;
+  line-height: 2;
+  font-weight: 600;
+}
+*/
+
+.TestBox {
+  @apply(--u-padding-1rem);
+  @apply(--u-border-style-solid);
+}
+
+.TestBoxLeft {
+  @apply(--u-padding-1rem);
+  @apply(--u-border-style-solid);
+  @apply(--u-border-right-width-0px);
+}
+
+.TestMarkup {
+  color: darkslategray;
+  background-color: #fff;
+  max-width: 50rem;
+  margin-bottom: 3rem;
+}
+
+.transparent-test-block {
+  width: 50rem;
+  height: 100px;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
